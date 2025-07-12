@@ -1,21 +1,11 @@
-import { useState } from 'react'
 import './App.css'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Login from './pages/Login.jsx'
 import Register from './pages/Register.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <Router>
-<<<<<<< HEAD
-      {/* <nav className="bg-gray-800 p-4 text-white flex space-x-4">
-        <Link to="/" className="hover:underline">Home</Link>
-        <Link to="/login" className="hover:underline">Login</Link>
-        <Link to="/register" className="hover:underline">Register</Link>
-      </nav> */}
-=======
       {/*
       <nav className="bg-gray-800 p-4 text-white flex space-x-4">
         <Link to="/" className="hover:underline">Home</Link>
@@ -23,7 +13,6 @@ function App() {
         <Link to="/register" className="hover:underline">Register</Link>
       </nav>
       */}
->>>>>>> 799cbe1039df82fc5016490686651605c70c8bef
       <div className="p-4">
         <Routes>
           <Route path="/" element={<h1 className="text-3xl font-bold underline text-blue-600">Home</h1>} />
